@@ -1,0 +1,56 @@
+== Metadata
+TIP: I Produktspesifikasjon Punktsky 1.0 gjøres det ingen endringer i metadatasettene. Gjeldende implementasjon vil derfor være skreddersydd for klassisk flybåren LiDAR og det må gjøres tilpasninger for hvert enkelt prosjekt. Justering til metadata avtales i hvert enkelt prosjekt. 
+
+=== Prosjektavgrensning
+SOSI-fil som definerer prosjektområde. Skal ha følgende innhold: 
+
+[cols="1,1"]
+|===
+| .HODE|
+| ..TEGNSETT UTF-8|
+| ..SOSI-VERSJON 4.5|
+| ..SOSI-NIVÅ 4|
+| ..OBJEKTKATALOG Punktsky 1.0|
+| .KURVE 1:|
+| ..OBJTYPE LaserDekningsområdeAvgrensning|
+| ..DEKNINGSNUMMER "08777"|Prosjektnummer
+| .FLATE 1:|
+| ..OBJTYPE LaserDekningsområde|
+| ..OPPDRAGSGIVER "Kartverket"|
+| ..DEKNINGSNUMMER "08777"      | Prosjektnummer
+| ..FKB-LASERSTANDARD "Psky_1_ALS_A" | Unik ID for kategori og sensortype, Ref Tabeller i Kap 5.
+| ..FLYFIRMA "Laser AS"         | Firma ansvarlig for prosjektleveransen
+|===
+
+<<< 
+=== Flystripe (Datafangstlinje)
+SOSI-fil som inneholder flyets/sensorens opptaksrute.
+
+Flyhøyde, dato og innstillinger av instrumentet kan variere
+innenfor et dekningsområde og angis derfor på flystripe. For …LASERTYPE må
+Instrumentnavn og unik instrumentID settes sammen. Eksempel: "Riegl
+VQ-1560i - L735"
+
+[cols="1,1"]
+|===
+| .HODE|
+| ..TEGNSETT UTF-8|
+| ..SOSI-VERSJON 4.5|
+| ..SOSI-NIVÅ 2|
+| ..OBJEKTKATALOG Punktsky 1.0|
+| .KURVE 1:|
+| ..OBJTYPE LaserFlystripe|
+| ..FLYDATO 20150502				|Dato på ISO format: YYYYMMDD
+| ..FLYHØYDE 2085.61|
+| ..FLYFIRMA "Laser AS"			|Firma som utfører datafangst
+| ..DEKNINGSNUMMER 10887|			Prosjektnummer
+| ..STRIPENUMMER 073|				Stripenummer innenfor datafangstblokk
+| ..LASERINFORMASJON|
+| ...LASERTYPE "Riegl VQ-1560i - L735"|	Sensornavn - Unik Sensor ID eller serienummer
+| ...PULSFREKVENS 295600|			Pulsrepetisjonsfrekvens (Hz)
+| ...SKANNERVINKEL 13|			    Åpningsvinkel sentrert om nadir (Deg)
+| ...SKANNERFREKVENS 46.3|		    Skannefrekvens (Hz)
+|===
+ 
+=== Krav Metadata "Egendefinert"
+For kategorien 'Egendefinert' må metadata etableres etter beste evne, og som et minimum må prosjektrapport og prosjektavgrensning etableres. 

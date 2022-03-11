@@ -1,0 +1,73 @@
+== Referansesystem
+=== Romlig referansesystem
+
+==== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+==== Navn på kilden til referansesystemet:
+SOSI /EPSG
+
+==== Ansvarlig organisasjon for referansesystemet:
+Kartverket / The international Association of Oil & Gas Producers
+
+==== Link til mer info om referansesystemet:
+www.kartverket.no/SOSI	/ https://epsg.org/
+
+==== Koderom:
+SOSI ReferansesystemKode (grunnriss) og Høydereferansesystem (høyde) / EPSG
+
+==== Identifikasjonskode:
+:xrefstyle: short
+Se <<tab-referansesystem>> under <<Kodeversjon>>.
+
+:xrefstyle: basic
+
+==== Kodeversjon 
+SOSI-del 1, SOSI-realisering SOSI-GML versjon 5.1 /
+EPSG Geodetic Parameter Dataset, version 8.0, august 2012
+
+[[tab-referansesystem]]
+.Liste over romlige referansesystem som benyttes i forvaltningen av punktskyer
+[cols="3*", options="header"]
+|===
+|Referansesystem
+|EPSG-kode (GML/JSON-format)
+|SOSI-kode (SOSI-format)
+
+|EUREF89 UTM32 (2d)
+|25832
+|Koordsys 22, Vert-datum ikke angitt
+
+|EUREF89 UTM33 (2d)
+|25833
+|Koordsys 23, Vert-datum ikke angitt
+
+|EUREF89 UTM35 (2d)
+|25835
+|Koordsys 25, Vert-datum ikke angitt
+
+|EUREF89 UTM32 + NN2000
+|5972
+|Koordsys 22, Vert-datum NN2000
+
+|EUREF89 UTM33 + NN2000
+|5973
+|Koordsys 23, Vert-datum NN2000
+
+|EUREF89 UTM35 + NN2000
+|5975
+|Koordsys 25, Vert-datum NN2000
+|===
+
+Ved distribusjon kan dataene transformeres til en rekke andre referansesystemer. 
+
+I hodet på LAS 1.4 formatet benyttes EPSG kodene 5972, 5973 og 5975. 
+
+
+=== Temporalt referansesystem
+
+==== Navn på temporalt referansesystem
+UTC
+
+==== Omfang
+<<HeleDatasettet,Hele datasettet>>

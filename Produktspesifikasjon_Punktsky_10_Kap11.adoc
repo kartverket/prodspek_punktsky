@@ -1,0 +1,79 @@
+== Leveranse
+=== Leveranse Punktsky
+
+Punktskyen skal leveres på LAS format som detaljert i  http://www.asprs.org/wp-content/uploads/2019/07/LAS_1_4_r15.pdf[LAS Specification 1.4 - R15]. Filene skal komprimeres til https://laszip.org/[LAZ].
+
+I henhold til LAS formatet skal standard GPS Time brukes istedenfor GPS Week Time. Tidspunktet er for utsendt puls og korrekt 'encoding tag' for GPS Time type må settes i 'LAS Header'.
+
+Det skal benyttes 'Point Data Record' 6 til 10 avhengig av faktisk innhold. Minimumskrav er 'Point Data Record' 6. 
+
+Ut over standard parametre skal følgende kodes inn i leveransen: 
+
+
+.ASPRS LAS 1.4 Lokale Tilpasninger
+[width="100%",options="header"]
+|====================
+| Attributt | Kommentar  
+| Header / System Identifier | Sensorsystem skal kodes i henhold til https://github.com/ASPRSorg/LAS/wiki/Standard-System-Identifiers[ASPRS Standard System Identifiers].
+| Header / Projection | Skal kodes i henhold til kap 3.2.2 i http://www.asprs.org/wp-content/uploads/2019/07/LAS_1_4_r15.pdf[LAS Specification 1.4 - R15] (OGC Coordinate System WKT Record).
+
+| Point Record / Scanner Channel | Rapport skal detaljere faktisk skanner kanal regime som er benyttet i prosjektet.     
+| Point Record / User Data | Felt som muliggjør enkel informasjon per punkt. Eventuell bruk skal detaljeres i rapporten.    
+| Point Record / Point Source ID | Unik ID for datafangstlinjenummer skal kodes til denne attributten. Det skal være en til en relasjon mellom Point Source og ..STRIPENUMMER i metadatasett.
+|====================
+
+Datasett skal klippes i henholdsvis 1:500 og 1:1000 kartblad. Kartbladindeks er beskrevet i https://kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/kart-og-geodata-2.0-standarder-geografisk-informasjon.pdf[Kart og Geodata - Tillegg D (side 108 og utover)]
+
+=== Leveranse Metadata
+==== Områdeavgrensning
+Områdeavgrensning(er) skal leveres på SOSI i henhold til datamodell detaljert i Kap13. Områdeavgrensningsfil skal navnes som følger:
+
+ * _<Prosjektnavn>_Prosjektavgrensning.sos_
+ * _Eksempel: Trollfjorden 2021_Prosjektavgrensning.sos_
+
+==== Flystripe
+Datafangstlinjer skal leveres på SOSI i henhold til datamodell detaljert i Kap13. Datafangstlinjer skal navnes som følger:
+
+ * _<Prosjektnavn>_Flystripe.sos_
+ * _Eksempel: Trollfjorden 2021_Flystripe.sos_
+
+==== Homogenitetsplott
+Homogenitetsplott skal leveres som GeoTIFF med 1m oppløsning som definert i PaBG. Homogenitetsplott skal ikke leveres for kategori 'Egendefinert'. Kartbladinndeling for homogenitetsplott skal følge LAS filinndelingen og hver tile skal navnes som følger:
+
+ * _<kartbladindeks>_Homogenitet.tif_ 
+ * _Eksempel: 32-1-507-212-16_Homogenitet.tif_
+
+Alle tiles som bygger homogenitetsplottet skal komprimeres til zip kontainer som navngis som følger:
+
+ * _<Prosjektnavn>_Homogenitetsplott.zip_
+ * _Eksempel: Trollfjorden 2021_Homogenitetsplott.zip_
+
+==== Kontrollflater
+
+Alle kontrollflater benyttet i justering av punktsky skal leveres på SOSI format. Kontrollflatene lastes opp til underkatalog <Diverse> på høydedata.no. Merk at evt. høydejustering av punktskyleveransen skal dokumenteres i rapport. Kontrollflater behøver ikke leveres for kategori 'Egendefinert'.
+
+=== Rapport
+Hovedrapport skal leveres på PDF format iht. krav spesifisert i PaBG. 
+Rapporten skal spesifisere hvilken realisasjon av høydereferansemodell som er benyttet.
+
+Rapporten skal navngis:
+
+ * _<Prosjektnavn>_Prosjektrapport.pdf_
+ * _Eksempel: Trollfjorden 2021_Prosjektrapport.pdf_
+
+Eventuelle vedlegg skal komprimeres til zip kontainer og lastes opp til [Diverse] katalog på høydedata.no med følgende navning:
+
+ * _<Prosjektnavn>_Vedlegg_Beskrivelse.zip_
+ * _Eksempel: Trollfjorden 2021_Vedlegg_Landmålingsrapport.zip_
+
+=== Leveransestruktur
+Datasettet skal leveres direkte i https://hoydedata.no/laserforvaltning[leverandørportal] på høydedata.no. FvL forventer følgende katalogstruktur og navnekonvensasjon. Prosjektnavn må være det samme som tildelt i FvL: 
+
+ <<Prosjektnavn>>
+ [] *.laz
+ [Metadata]\<Prosjektnavn>_Prosjektavgrensning.sos
+ [Metadata]\<Prosjektnavn>_Flystripe.sos
+ [Metadata]\<Prosjektnavn>_Prosjektrapport.pdf
+ [Diverse]\<Prosjektnavn>_Homogenitet.zip
+ [Diverse]\<Prosjektnavn>_Kontrollflater.sos
+ [Diverse]\<Prosjektnavn>_Vedlegg.zip  

@@ -1,0 +1,81 @@
+== Appendix A: Punktsky Klasseinndeling
+
+Alle punkt, uavhengig sensortype og kategori, skal klassifiseries i henhold til følgende skjema som baserer seg på http://www.asprs.org/wp-content/uploads/2019/07/LAS_1_4_r15.pdf[LAS Specification 1.4 - R15]. Benyttes andre klasser enn de som er omhandlet i tabellen skal disse legges mellom 64 og 256. 
+
+//Originaldatasett i XLSX på Teams
+//Alle endringer må gjøres i XLSX og kopieres over hit fra ADOC kolonne 
+
+.ASPRS Standard Punktklasser
+[width="100%",options="header,footer",cols="10,20,20,50"]
+|====================
+|Klasse|ASPRS Beskrivelse|Beskrivelse|
+|0|Created, never classified|Aldri Klassifisert|Skal ikke leveres.
+|1|Unclassified|Uklassifisert|Alle punkt som ikke er aktivt klassifisert.
+|2|Ground|Terreng|Punkt på bakke. Hvis ikke klasse 9 (vann) er benyttet skal alle punkt på vannoverflate til bakkeklasse. Faste store steiner skal klassifiseries til bakke. Løse steiner og steiner som er løsmasser etter ras klassifiseres til klasse 1 (uklassifisert).
+|3|Low Vegetation|Lav Vegetasjon|Punkt på lav vegetasjon (Definerende høyde må spesifiseres per prosjekt).
+|4|Medium Vegetation |Middels Vegetasjon|Punkt på middels vegetasjon (Definerende høyde må spesifiseres per prosjekt).
+|5|High Vegetation|Høy Vegetasjon|Punkt på høy vegetasjon (Definerende høyde må spesifiseres per prosjekt).
+|6|Building|Bygning|Punkt på bygningskropp.
+|7|Low Point (Noise)|Støy|Støypunkt forårsaket av skyer, fugler, "multipath". Klassen omfatter unormalt høye og lave punkt (spikere).
+|8|Model Key-Point (mass point)||Skal ikke leveres.
+|41|Watersurface Bathy|Vannoverflate |Punkter på vannoverflate. Vannflater større enn 100m^2^ og elver bredere enn 3m skal registreres (FKB-C)
+|10|Rail|Jernbane|Punkt på jernbanespor.
+|11|Road Surface|Vegbane|Punkt innenfor vegbane.
+|12|Overlap Points|Overlappunkt|Skal ikke leveres.
+|13|Wire Guard|Ledning - Beskyttelse|Jordingslinje (Fargelegges `#D7191C`, ref figur).
+|14|Wire Conductor|Ledning|Luftledning (Fargelegges `#FDAE61`, ref figur).
+|15|Transmission Tower|Mast|Mast (Fargelegges `#ABD9E9`, ref figur).
+|16|Wire-Structure|Ledning - Kobling (isolasjon)|Skal ikke leveres.
+|17|Bridge-Deck|Brodekke|Minstemål for klassifisering er 10 m^2^. Alle punkter på selve brodekket skal klassifiseres til bro (Klasse 17). Alle andre punkter på bro skal klassifiseres til uklassifisert (1) eller korrekt klasse i eventuell opsjon.
+|18|High Noise|Støy Høy|Skal ikke leveres.
+|19|Overhead Structure||Markør Luftspenn (Fargelegges `#2C7BB6`).
+|20|Ignored Ground||Skal ikke leveres.
+|21|Snow|Snø|Punkter innenfor snøflater større enn 1000m^2^ skal klassifiseres til 'Snø'.
+|22|Temporal Exclusion|Temporalt Utelukket|I overlappen mellom to flater med tidsbestemt nivåforskjell kan klasse 22 benyttes til å isolere det ene nivået. Eksempel på tidsbestemt endring er snøsmelting og forskjellig vannstand.
+|23|Reserved||
+|24|Reserved||
+|25|Reserved||
+|26|Reserved||
+|27|Reserved||
+|28|Reserved||
+|29|Reserved||
+|30|Reserved||
+|31|Reserved||
+|32-39|Reserved||
+|40|Seafloor Bathy|Havbunn|Punkt som faller på sjøbunn eller elvebunn.
+|41|Watersurface Bathy|Vannoverflate |Punkter på vannoverflate.
+|42|Watersurface Derived|Vannoverflate Generert|Genererte punkt på vannoverflate som er benyttet i beregning av refraksjon.
+|43|Object - Submerged|Marin Vegetasjon|Må defineres per prosjekt.
+|44|IHO object|IHO-objekt|Må defineres per prosjekt.
+|45|No Bottom|Ikke bunn (uklassifisert)|Må defineres per prosjekt.
+|46-63|Reserved||Reservert.
+|64-255|User definable||Alle egendefinerte klasser må legges til dette intervallet. 
+|Klasse|ASPRS Beskrivelse|Beskrivelse|
+|====================
+
+=== Presisering Klasse 17 - Bro
+For at et bruobjekt skal klassifiseres som klasse 17 (brudekke) må følgende være innfridd: 
+
+* A - Areal av brudekke må være mer enn 10m^2^.
+* d - Avstand brudekke ned til topp underløp mindre enn 1m.
+* W - Bredde av underløp større enn 2m.
+
+.Presisering Klasse 17 - Bro (17)
+[#LAS_CL17]
+//[caption="Figure 1:"]
+image::figurer/Kap14_Klassifisering_PresiseringKL17_Bru.png[Presisering Klassifisering Bru (17),200,align="center"]
+
+=== Presisering Klasse 13, 14, 15 - Ledningsklasser
+For klassifisering av ledningstema skal følgende tolkning ligge til grunn: 
+
+.Presisering Klasse 13, 14, 15 - Ledningsklasser
+[#LAS_EL]
+//[caption="Figure 1:"]
+image::figurer/Kap14_Klassifisering_Presisering_Ledning.png[Presisering Klasse 13-14-15 - Ledningsklasser,align="center"]
+
+=== Presisering Klassifisering av Damkonstruksjoner
+For damkonstruksjoner skal følgende klassifiseringsregime benyttes: 
+
+* Punkt som faller på damkonstruksjoner som aktivt holder vann tilbake skal legges til klasse 2 (bakke).
+* Punkt punkt som faller på infrastruktur (lukehus, rekkverk, master) legges til uklassifisert (1) eller korrekt klasse i eventuell opsjon.
+* Punkt som faller på brodekke over demningselement skal legges til klasse 17 (brodekke).

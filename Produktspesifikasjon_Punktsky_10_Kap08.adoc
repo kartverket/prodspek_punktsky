@@ -1,0 +1,4 @@
+== Datafangst
+Det henvises til standarden Produksjon av Basis Geodata (gjeldende versjon), for hvordan laserskanning fra luftbåren sensor skal gjennomføres og rapporteres. Kravene gjelder for luftbåren LiDAR og i hovedtrekk for luftbåren Batymetrisk LiDAR. 
+
+For kartlegging med multistråle ekkolodd vises det til relevante føringer i https://www.kartverket.no/globalassets/til-sjos/standard-og-godkjenningsordning/teknisk-kravspesifikasjon-for-sjomaling.pdf[Kartverket Sjø Teknisk kravspesifikasjon for sjømåling ver 3.00]. Kravspesifikasjonen for hvert enkelt prosjekt detaljerer hvilken av delspesifikasjonene som er gjeldende. 

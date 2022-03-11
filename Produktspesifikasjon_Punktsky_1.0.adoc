@@ -1,0 +1,205 @@
+:datasett: Punktsky
+:versjon: 1.0
+:publisert: 2022-01-17
+:prodspek-forrige: Produktspesifikasjoner_fkb-laser_v9_fkb-laser-v30-2021-01-01_.pdf
+:metadata-url: 
+:versjon-forrige: FKB-Laser v3.0 2021-01-01
+// All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
+//include::../../felles/adoc_parametere.adoc[]
+//Punktsky avviker noe og adoc_parametere er kopiert inn i fil: 
+:toc: left
+:toc-title: Innholdsfortegnelse
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 4
+:figure-caption: Figur
+:table-caption: Tabell
+:section-refsig: Kapittel
+:version-label: Versjon
+:doctype: book
+:encoding: utf-8
+:lang: nb
+:appendix-caption: Vedlegg
+:pdf-page-size: A4
+ifdef::backend-pdf[:toc: macro]
+:chapter-label! :
+:skjemabase-url: https://skjema.geonorge.no/SOSI/produktspesifikasjon/
+:prodspekbase-url: https://sosi.geonorge.no/produktspesifikasjoner/
+:umlbase-url: https://sosi.geonorge.no/uml-modeller/sosi-del-3-produktspesifikasjoner/
+:reginstrbase-url: https://sosi.geonorge.no/registreringsinstrukser/
+:fkbGenerellDel-url: https://sosi.geonorge.no/Standarder/FKB_generell_del/5.0
+:title-page-background-image: image:../../felles/figurer/forsidebilde_kartverketstandarder.jpg[]
+:fkbdatasett: {datasett} {versjon}
+:skjema-url: {skjemabase-url}{datasett}/{versjon}
+:prodspek-url: {prodspekbase-url}{datasett}
+:uml-url: {umlbase-url}{datasett}/{versjon}
+:reginstr-url: {reginstrbase-url}{datasett}/{versjon}
+:prodspek-forrige-url: https://register.geonorge.no/data/documents/Produktspesifikasjoner_fkb-laser_v9_fkb-laser-v30-2021-01-01_.pdf
+= Produktspesifikasjon: {fkbdatasett}
+Geovekst
+{versjon}, 2022-01-01
+
+// include::../../felles/dokument_metadata.adoc[]
+// Punktsky avviker noe og dokument_metadata.adoc er kopiert inn i fil: 
+// HTML-verjson av dokument-metadata
+ifeval::["{backend}" == "html5"]
+
+****
+[TIP]
+Dette dokumentet kan også lastes ned link:{prodspek-url}/{versjon}/Produktspesifikasjon_{datasett}_{versjon}.pdf[som PDF].
+
+*Publisert*: {publisert} +
+*Denne versjonen finnes på*: {prodspek-url}/{versjon} +
+*Nyeste versjon finnes på*: {prodspek-url} +
+*Denne versjonen erstatter*: {prodspek-forrige-url}[{versjon-forrige}] +
+*Faglig godkjent av*: Geovekst +
+*Formelt godkjent av*: Kartverket 
+****
+endif::[]
+
+// PDF-verjson av dokument-metadata
+ifeval::["{backend}" == "pdf"]
+
+{empty} +
+
+****
+
+*Publisert*: {publisert} +
+*Denne versjonen finnes på*: {prodspek-url}/{versjon} +
+- {prodspek-url}/{versjon}[HTML-dokument] +
+- {prodspek-url}/{versjon}/Produktspesifikasjon_{datasett}_{versjon}.pdf[PDF-dokument] +
+*Nyeste versjon finnes på*: {prodspek-url} +
+*Denne versjonen erstatter*: {prodspek-forrige-url}[{versjon-forrige}] +
+*Faglig godkjent av*: Geovekst +
+*Formelt godkjent av*: Kartverket 
+****
+endif::[]
+
+
+
+toc::[]
+
+== Innledning, historikk og endringslogg
+
+=== Innledning
+
+Denne spesifikasjonen detaljerer etablering og forvaltning av punktskyer fra forskjellige sensorer montert på forskjellige platformer. 
+
+En punktsky består av en stor mengde enkeltstående punkt uten noen relasjon til hverandre. I tillegg til XYZ koordinater, kan hvert punkt ha en rekke berikende atributter som gjør det mulig å sette punktet i sammenheng. Et eksempel på en slik atributt er klassifisering hvor punktet tilegnes en definert klasse slik som bakkepunkt, brudekke eller støy. Punktene kan også tilegnes fargeverdier fra foto for enklere tolking. 
+
+Punktskyene produseres med forskjellige metoder som hver gir forskjellige egenskaper. Topografiske punktskyer etableres [underline]#enten# med et LiDAR system eller ved bruk av fotogrammetriske metoder (bildematching). Batymetriske punktskyer etableres [underline]#enten# med et LiDAR system eller med et multistråle ekkolodd. Selv om punktskyene fra de forskjellige sensorene utveksles over samme datamodell er det viktig på presisere at de er fundamentalt forskjellige og dekker opp forskjellige behov.  
+
+Punktskyen ansees som et primærprodukt, og for praktisk bruk vil det være hensiktsmessig å avlede et uniformt grid eller en triangelmodell.
+
+Primært skal spesifikasjonen gi et rammeverk for bestilling av punktskydatasett, men dokumentet vil også være en referanse for datasett som forvaltes i høydedata.no. 
+
+=== Historikk
+
+Rammeverket i Produktspesifikasjon Punktsky 1.0 tar utgangspunkt i og bygger videre på Produktspesifikasjon https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/fkb-laser[FKB-Laser v3.0 2021-01-01].
+
+=== Endringslogg
+
+==== Innhold i endringsloggen
+
+Punktsky 1.0 erstatter produktspesifikasjonen FKB-Laser 3.0. For terrestrisk LiDAR videreføres i stor grad det eksisterende rammeverket. Nye kartleggingsmetoder introduseres og standarden innbefatter også en ny hovedkategori "Egendefinert" til hjelp i forvaltningen av punktskyer med ukjent nøyaktighet og opphav. Det vil ikke være tilstrekkelig å lese endringsloggen for å få et helhetlig bilde av Punktsky 1.0 og for å få et komplett bilde av produktspesifikasjonen må man lese dokumentasjonen som en helhet.
+
+==== Endringer siden FKB-Laser 3.0 - 2021-01-01:
+
+* Introdusert kategori: "Egendefinert"
+* Introdusert metode: Batymetrisk LiDAR
+* Introdusert metode: Multistråle Ekkolodd
+* Introdusert metode: Bildematching
+* Introdusert ny beregning av fullstendighet for kategorier med høy tetthet. 
+
+<<<
+
+=== Normative referanser
+[#FKB]
+*[FKB]* : http://skjema.geonorge.no/SOSITEST/fagomr%c3%a5destandard/FKB_generell/5.0/[SOSI abstrakte spesifikasjoner – FKB generell del 5.0]
+
+[#G]
+*[G]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/geodatakvalitet-1.0-standarder-geografisk-informasjon.pdf[Geodatakvalitet, versjon 1.0]
+
+[#GEO-VEIL]
+*[GEO-VEIL]* : https://www.kartverket.no/geodataarbeid/geovekst/veiledningsmateriell[Geovekst veiledingsdokumentasjon]
+
+[#PABG]
+*[PABG]* : https://www.kartverket.no/globalassets/geodataarbeid/standardisering/standarder/standarder-geografisk-informasjon/produksjon-av-basis-geodata-1.0-standarder-geografisk-informasjon.pdf[Produksjon av basis geodata]
+
+[#KVSjø]
+*[KVSJØ*]: https://www.kartverket.no/globalassets/til-sjos/standard-og-godkjenningsordning/teknisk-kravspesifikasjon-for-sjomaling.pdf[Teknisk kravspesifikasjon for sjømåling, Versjon 3.0]
+
+[#ASPRS-LAS]
+*[ASPRS-LAS]* : http://www.asprs.org/wp-content/uploads/2019/07/LAS_1_4_r15.pdf[ASPRS LAS Specification 1.4 - R15]
+
+// Kap2 - Definisjoner og Forkortelser
+// Oppfølging Jon
+include::Produktspesifikasjon_Punktsky_10_Kap02.adoc[]
+
+<<<
+// Kap3 - Generelt om spesifikasjonen
+// OK
+include::Produktspesifikasjon_Punktsky_10_Kap03.adoc[]
+
+<<<
+// Kap4 - Spesifikasjonsomfang
+// Uklar
+include::Produktspesifikasjon_Punktsky_10_Kap04.adoc[]
+
+<<<
+// Kap5 - Innhold og struktur
+// Bestillingskategorier
+include::Produktspesifikasjon_Punktsky_10_Kap05.adoc[]
+
+<<<
+// Kap6 - Referansesystem
+// OK
+include::Produktspesifikasjon_Punktsky_10_Kap06.adoc[]
+
+<<<
+// Kap7 - Kvalitet
+// Bestillingskategorier
+include::Produktspesifikasjon_Punktsky_10_Kap07.adoc[]
+
+<<<
+// Kap8 - Datafangst
+// Bestillingskategorier
+include::Produktspesifikasjon_Punktsky_10_Kap08.adoc[]
+
+<<<
+// Kap9 - Datavedlikehold
+// 
+include::Produktspesifikasjon_Punktsky_10_Kap09.adoc[]
+
+<<<
+// Kap10 - Presentasjon
+// 
+include::Produktspesifikasjon_Punktsky_10_Kap10.adoc[]
+
+<<<
+// Kap11 - Leveranse
+// LAS 1.4
+// Metadata
+// Homogenitetsplott
+include::Produktspesifikasjon_Punktsky_10_Kap11.adoc[]
+
+<<<
+// Kap12 - Tilleggsinformasjon
+include::Produktspesifikasjon_Punktsky_10_Kap12.adoc[]
+
+<<<
+// Kap13 - Metadata
+// SOSI
+include::Produktspesifikasjon_Punktsky_10_Kap13.adoc[]
+
+// Kap14 - Appendix
+include::Produktspesifikasjon_Punktsky_10_Kap14_App1.adoc[]
+
+<<<
+// Kap15 - Appendix
+include::Produktspesifikasjon_Punktsky_10_Kap15_App2.adoc[]
+
+// Kap16 - Appendix
+[discrete]
+== Lisensvilkår
+include::../../felles/lisensvilkaar.adoc[]

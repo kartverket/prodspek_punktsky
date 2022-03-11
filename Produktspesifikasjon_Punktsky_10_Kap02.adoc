@@ -1,0 +1,108 @@
+== Definisjoner og forkortelser
+
+=== Definisjoner
+
+.topografi
+Topografi betyr stedsbeskrivelse, et landområdes terrengforhold, bebyggelse, kommunikasjoner og lignende. Topografien beskjeftiger seg med oppmåling og beskrivelse av områder på jordoverflaten; både på landoverflaten, landtopografi, og havoverflaten, havtopografi. (topografi i Store norske leksikon på snl.no. Hentet 6. januar 2022 fra https://snl.no/topografi)
+
+_MERKNAD_: Sensorer som etablerer topografi betegnes som i standarden som topografiske sensorer. Eksempel Luftbåren Topografisk LiDAR.
+
+.batymetri
+Batymetri beskriver terreng- og høydeforhold for hav- og sjøbunn.
+
+_MERKNAD_: Sensorer som etablerer batymetri betegnes som i standarden som batymetriske sensorer. Eksempel luftbåren batymetrisk liDAR og multistråle ekkolodd. 
+
+.digital høydemodell (DHM)  
+En digital representasjon av høydeverdier som varierer over en flate.
+
+_MERKNAD_: En DHM er en samling av et stort antall høydepunkter på en flate. Punktene kan være organisert som et regelmessig rutenett eller i et mer uregelmessig mønster. Den siste metoden vil normalt gi den beste beskrivelsen av flaten. Alternativ engelsk betegnelse er ”Digital Elevation Model (DEM)”.
+
+.digital terrengmodell (DTM)  
+En DHM som beskriver terrengoverflaten uten vegetasjon, bygninger og andre objekter.
+
+.digital overflatemodell (DOM)  
+En DHM som beskriver overflaten av terrenget inkludert objekter som vegetasjon, bygninger etc.
+
+_MERKNAD_: Alternativ engelsk betegnelse er «Digital Surface Model (DSM)». 
+
+.luftbåren laserskanning  
+Måling av avstand mellom en lasersensor, i fly eller helikopter, og terrengoverflaten.
+
+_MERKNAD_: Flybåren laserskanning kalles også laseraltimetri.  
+
+.fotogrammetrisk punktsky 
+Punktsky generert ved hjelp av fotogrammetriske metoder.  
+
+_MERKNAD_ :	Kalles også bildematching eller med den engelske betegnelsen «dense image matching» 
+
+.multistråle ekkolodd 
+Måling av avstand ved hjelp av akkustikk under vann.  
+
+_MERKNAD_: Kalles også MBES fra den engelske betegnelsen «Multi Beam Echo Sounding». 
+
+.terrestrisk laserskanning
+Måling av avstand mellom en lasersensor plassert på «bakkenivå» og objekter rundt sensoren. 
+
+_MERKNAD_: Sensorer montert på kjøretøy, stativ eller håndholdte sensorer passer alle inn her. 
+
+.kvalitet 
+Helheten av egenskaper en enhet har og som vedrører dens evne til å tilfredsstille uttalte og underforståtte behov [NS-ISO 8402 def. 2.1]. 
+
+_MERKNAD_:
+I Geodatastandarden er det definert seks kvalitetselementer: 
+
+ * stedfestingsnøyaktighet 
+ * egenskapsnøyaktighet 
+ * logisk konsistens (kontroll av logiske regler/sammenhenger) 
+ * fullstendighet 
+ * datasettets historikk og tidligere bruk 
+ * tilgjengelighet og leveringstid 
+
+.laserskanning fotavtrykk 
+Lasersensorens opptaksområde på overflaten.
+
+_MERKNAD_: Størrelsen på fotavtrykket sier noe om hvor små detaljer man i praksis kan detektere. Alternativ engelsk betegnelse er ”footprint”.
+
+.punkttetthet 
+Antall punkter som treffer en flate pr. m2.
+
+.laserskanning skannevinkel 
+Laserstrålens vinkel i forhold til sensorens referansesystem. 
+
+.metadata  
+Informasjon som beskriver et datasett.
+ 
+_MERKNAD_: Hvilke opplysninger som inngår i metadataene, kan variere avhengig av datasettets karakter. Vanlige opplysninger er innhold, kvalitet, tilstand, struktur, format, produsent og vedlikeholdsansvar. 
+
+.produktspesifikasjon
+Detaljert beskrivelse av ett datasett eller en serie med datasett med tilleggsinformasjon som gjør det mulig å produsere, distribuere og bruke datasettet av andre (tredjepart).
+
+_MERKNAD_: En dataproduktspesifikasjon kan lages for produksjon, salg, sluttbrukervirksomhet eller annet. 
+
+=== Forkortelser
+
+*FvL*: Forvaltningsløsning Høydedata
+
+*NDH*: Nasjonal detaljert høydemodell  
+
+*NHM*: Nasjonal høydemodell (produktene fra prosjektet NDH) 
+
+*DHM*: Digital høydemodell 
+
+*DOM*: Digital overflatemodell 
+
+*DTM*: Digital terrengmodell 
+
+*FKB*: Felles KartdataBase 
+
+*ALS*: Airborne Laser Scanning 
+
+*ALB*: Airborne Lidar Bathymetry 
+
+*LIDAR*: Light Detection And Ranging, betegner et prinsipp for avstandsmålingen 
+
+*MBES*: Multi-Beam Echo Sounding 
+
+*SOSI*: Samordnet Opplegg for Stedfestet Informasjon - et standardformat for digitale geodata (SOSI-standarden) 
+
+*UML*: Unified Modelling Language. Modelleringsspråk som brukes til å beskrive geografiske  datamodeller 

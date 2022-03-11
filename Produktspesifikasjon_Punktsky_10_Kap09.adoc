@@ -1,0 +1,4 @@
+== Datavedlikehold
+Datasettene ajourføres periodisk ved hjelp av ny heldekkende datafangst. Ajourføringen skjer ved behov, og kartleggingsfrekvens er avhengig av områdetypen. Byområder og utbyggingsområder ajourføres oftere enn spredt bebygde områder. 
+
+Data fra alle prosjekter skal leveres og forvaltes i hoydedata.no

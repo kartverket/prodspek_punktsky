@@ -1,0 +1,56 @@
+== Generelt om spesifikasjonen
+
+=== Unik identifisering
+Produktspesifikasjon Punktsky
+
+==== Fullstendig navn
+Produktspesifikasjon Punktsky
+
+==== Versjon
+1.0
+
+=== Referansedato
+2022-01-01
+
+=== Ansvarlig organisasjon
+Geovekst
+
+=== Språk
+Norsk
+
+=== Hovedtema
+Basisdata
+
+=== Temakategori
+punktsky, laser, fotogrammetrisk punktsky, batymetri, høydedata, dybdedata, digital terrengmodell (DTM), digital overflatemodell (DOM). 
+
+=== Sammendrag
+Denne spesifikasjonen detaljerer etablering og forvaltning av høydebærende datasett fra forskjellige platformer og sensorer. 
+
+=== Formål
+Referansedokument for bestilling av punktskyer og dokumentasjon av datasett lagret i gjeldende forvaltningsløsning.
+
+=== Representasjonsform
+Punktsky
+
+=== Datasettoppløsning
+Datasettets teoretiske punkttetthet (bestilt punkttetthet)
+
+=== Utstrekningsinformasjon
+*Utstrekningbeskrivelse* + 
+FKB-data dekker Norges fastlandsterritorium 
+
+*Geografisk område* + 
+Nord: 72° +
+Sør: 57° +
+Øst: 32° +
+Vest: 4°
+
+*Vertikal utbredelse* + 
+Fra ca -250 m til ca 2500 m
+
+*Innhold gyldighetsperiode* + 
+Ikke angitt
+
+=== Identifikasjonsomfang
+<<HeleDatasettet,Hele datasettet>>
