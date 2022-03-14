@@ -92,7 +92,7 @@ Krav til datafangst, prosessering og leveranse er utfyllende beskrevet i PaBG.
 
 *Maksimum Punktavstand* er en funksjon av punkttetthet [SQRT(1/tetthet)] og sikrer en homogen punktdistribusjon. 
 
-*Maksimum Fotavtrykk* definerer maksimum tillatte fotavtrykk og skal beregnes ved hjelp av 1/e^2^.    
+*Maksimum Fotavtrykk* definerer maksimum tillatte fotavtrykk og skal beregnes med formel 1/e^2^. Krav til fotavtrykk skal gjelde i nadir. (skannevinkel lik 0).     
 
 *Maksimum Skannevinkel* beregnes som pluss og minusverdi fra nadir. Kravet legger premisser for selve flyplanleggingen og høyere åpningsvinkel for leveransen kan spesifiseres per prosjekt. 
 
@@ -203,7 +203,7 @@ Punktsky generert fra bildemateriale. Minimumskategorien beskriver punktsky gene
 |Vertikal Nøyaktighet|Standardavvik (1 sigma)|x |-|-|Egendefinert
 |Vertikal Nøyaktighet|Systematisk|x |0,12-0,18 |0,30-0,75|Egendefinert
 |Horisontal Nøyaktighet|Standardavvik (1 sigma)|x |-|-|Egendefinert
-|Horisontal Nøyaktighet|Systematisk|x |0,08-0,12 |0,20-0,25|Egendefinert
+|Horisontal Nøyaktighet|Systematisk|x|0,08-0,12 |0,20-0,50|Egendefinert
 |Obligatoriske Klasser||x |1+7+9|1+7+9|1+7
 |NHM Oppdateres||x|Nei|Nei|Nei
 |====================
