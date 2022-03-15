@@ -1,7 +1,7 @@
 :datasett: Punktsky
 :versjon: 1.0.1
 :publisert: 2022-03-11
-:prodspek-forrige: Produktspesifikasjoner_fkb-laser_v9_fkb-laser-v30-2021-01-01_.pdf
+:prodspek-forrige: Produktspesifikasjon_Punktsky_1.0.pdf
 :metadata-url: 
 :versjon-forrige: Punktsky v1.0 2022-01-01
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
@@ -34,7 +34,7 @@ ifdef::backend-pdf[:toc: macro]
 :prodspek-url: {prodspekbase-url}{datasett}
 :uml-url: {umlbase-url}{datasett}/{versjon}
 :reginstr-url: {reginstrbase-url}{datasett}/{versjon}
-:prodspek-forrige-url: https://register.geonorge.no/data/documents/Produktspesifikasjoner_fkb-laser_v9_fkb-laser-v30-2021-01-01_.pdf
+:prodspek-forrige-url: {prodspekbase-url}{datasett}
 = Produktspesifikasjon: {fkbdatasett}
 Geovekst
 {versjon}, 2022-01-01
