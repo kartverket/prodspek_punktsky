@@ -18,7 +18,7 @@ Alle punkt, uavhengig sensortype og kategori, skal klassifiseries i henhold til 
 |6|Building|Bygning|Punkt på bygningskropp.
 |7|Low Point (Noise)|Støy|Støypunkt forårsaket av skyer, fugler, "multipath". Klassen omfatter unormalt høye og lave punkt (spikere).
 |8|Model Key-Point (mass point)||Skal ikke leveres.
-|41|Watersurface Bathy|Vannoverflate |Punkter på vannoverflate. Vannflater større enn 100m^2^ og elver bredere enn 3m skal registreres (FKB-C)
+|9|Watersurface|Vannoverflate |Punkter på vannoverflate. Vannflater større enn 100m^2^ og elver bredere enn 3m skal registreres (FKB-C)
 |10|Rail|Jernbane|Punkt på jernbanespor.
 |11|Road Surface|Vegbane|Punkt innenfor vegbane.
 |12|Overlap Points|Overlappunkt|Skal ikke leveres.
