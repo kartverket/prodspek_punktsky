@@ -28,13 +28,13 @@ ifdef::backend-pdf[:toc: macro]
 :umlbase-url: https://sosi.geonorge.no/uml-modeller/sosi-del-3-produktspesifikasjoner/
 :reginstrbase-url: https://sosi.geonorge.no/registreringsinstrukser/
 :fkbGenerellDel-url: https://sosi.geonorge.no/Standarder/FKB_generell_del/5.0
-:title-page-background-image: image:../../felles/figurer/forsidebilde_kartverketstandarder.jpg[]
+:title-page-background-image: image:C:/00Bitbucket/dokumentasjon_fkb/felles/figurer/forsidebilde_kartverketstandarder.jpg[]
 :fkbdatasett: {datasett} {versjon}
 :skjema-url: {skjemabase-url}{datasett}/{versjon}
 :prodspek-url: {prodspekbase-url}{datasett}
 :uml-url: {umlbase-url}{datasett}/{versjon}
 :reginstr-url: {reginstrbase-url}{datasett}/{versjon}
-:prodspek-forrige-url: {prodspekbase-url}{datasett}
+:prodspek-forrige-url: {prodspekbase-url}{datasett}/1.0
 = Produktspesifikasjon: {fkbdatasett}
 Geovekst
 {versjon}, 2022-01-01
@@ -45,6 +45,8 @@ Geovekst
 ifeval::["{backend}" == "html5"]
 
 ****
+WARNING: Denne standarden er erstattet av en nyere versjon!
+
 [TIP]
 Dette dokumentet kan også lastes ned link:{prodspek-url}/{versjon}/Produktspesifikasjon_{datasett}_{versjon}.pdf[som PDF].
 
@@ -63,6 +65,7 @@ ifeval::["{backend}" == "pdf"]
 {empty} +
 
 ****
+*Advarsel*: Denne standarden er erstattet av en nyere versjon!
 
 *Publisert*: {publisert} +
 *Denne versjonen finnes på*: {prodspek-url}/{versjon} +
@@ -208,4 +211,4 @@ include::Produktspesifikasjon_Punktsky_10_Kap15_App2.adoc[]
 // Kap16 - Appendix
 [discrete]
 == Lisensvilkår
-include::../../felles/lisensvilkaar.adoc[]
+include::C:/00Bitbucket/dokumentasjon_fkb/felles/lisensvilkaar.adoc[]
