@@ -1,9 +1,8 @@
 :datasett: Punktsky
 :versjon: 1.0.2
+:versjon-forrige: 1.0.1
 :publisert: 2022-03-31
-:prodspek-forrige: Produktspesifikasjon_Punktsky_1.0.1.pdf
-:metadata-url: 
-:versjon-forrige: Punktsky v1.0.1 2022-03-11
+:prodspek-forrige: Produktspesifikasjon_Punktsky_{versjon-forrige}.pdf
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
 //include::../../felles/adoc_parametere.adoc[]
 //Punktsky avviker noe og adoc_parametere er kopiert inn i fil: 
@@ -34,7 +33,7 @@ ifdef::backend-pdf[:toc: macro]
 :prodspek-url: {prodspekbase-url}{datasett}
 :uml-url: {umlbase-url}{datasett}/{versjon}
 :reginstr-url: {reginstrbase-url}{datasett}/{versjon}
-:prodspek-forrige-url: {prodspekbase-url}{datasett}
+:prodspek-forrige-url: {prodspekbase-url}{datasett}/{versjon-forrige}
 = Produktspesifikasjon: {fkbdatasett}
 Geovekst
 {versjon}, 2022-01-01
@@ -51,7 +50,7 @@ Dette dokumentet kan også lastes ned link:{prodspek-url}/{versjon}/Produktspesi
 *Publisert*: {publisert} +
 *Denne versjonen finnes på*: {prodspek-url}/{versjon} +
 *Nyeste versjon finnes på*: {prodspek-url} +
-*Denne versjonen erstatter*: {prodspek-forrige-url}[{versjon-forrige}] +
+*Denne versjonen erstatter*: {prodspek-forrige-url}[{datasett} {versjon-forrige}] +
 *Faglig godkjent av*: Geovekst +
 *Formelt godkjent av*: Kartverket 
 ****
@@ -69,7 +68,7 @@ ifeval::["{backend}" == "pdf"]
 - {prodspek-url}/{versjon}[HTML-dokument] +
 - {prodspek-url}/{versjon}/Produktspesifikasjon_{datasett}_{versjon}.pdf[PDF-dokument] +
 *Nyeste versjon finnes på*: {prodspek-url} +
-*Denne versjonen erstatter*: {prodspek-forrige-url}[{versjon-forrige}] +
+*Denne versjonen erstatter*: {prodspek-forrige-url}[{datasett} {versjon-forrige}] +
 *Faglig godkjent av*: Geovekst +
 *Formelt godkjent av*: Kartverket 
 ****
@@ -105,14 +104,14 @@ Rammeverket i Produktspesifikasjon Punktsky 1.0 tar utgangspunkt i og bygger vid
 
 Punktsky 1.0 erstatter produktspesifikasjonen FKB-Laser 3.0. For terrestrisk LiDAR videreføres i stor grad det eksisterende rammeverket. Nye kartleggingsmetoder introduseres og standarden innbefatter også en ny hovedkategori "Egendefinert" til hjelp i forvaltningen av punktskyer med ukjent nøyaktighet og opphav. Det vil ikke være tilstrekkelig å lese endringsloggen for å få et helhetlig bilde av Punktsky 1.0 og for å få et komplett bilde av produktspesifikasjonen må man lese dokumentasjonen som en helhet.
 
-==== Endringer siden Punktsky 1.0.1 - 2022-03-11:
+==== Endringer siden Punktsky 1.0.1:
 * Rettet feil i klassekode for vannflate
 
-==== Endringer siden Punktsky 1.0 - 2022-01-01:
+==== Endringer fra Punktsky 1.0 - Punktsky 1.0.1:
 * Presisering fotavtrykk for Luftbåren Topografisk LiDAR
 * Rettet feil krav til grunnrissnøyaktighet i bildematching for kategori Psky_1_DIM_C. 
 
-==== Endringer siden FKB-Laser 3.0 - 2021-01-01:
+==== Endringer siden FKB-Laser 3.0 til Punktsky 1.0:
 
 * Introdusert kategori: "Egendefinert"
 * Introdusert metode: Batymetrisk LiDAR
@@ -141,72 +140,82 @@ Punktsky 1.0 erstatter produktspesifikasjonen FKB-Laser 3.0. For terrestrisk LiD
 [#ASPRS-LAS]
 *[ASPRS-LAS]* : http://www.asprs.org/wp-content/uploads/2019/07/LAS_1_4_r15.pdf[ASPRS LAS Specification 1.4 - R15]
 
+<<<
 // Kap2 - Definisjoner og Forkortelser
 // Oppfølging Jon
-include::Produktspesifikasjon_Punktsky_10_Kap02.adoc[]
+
+include::Produktspesifikasjon_Punktsky_Kap02.adoc[]
 
 <<<
 // Kap3 - Generelt om spesifikasjonen
 // OK
-include::Produktspesifikasjon_Punktsky_10_Kap03.adoc[]
+
+include::Produktspesifikasjon_Punktsky_Kap03.adoc[]
 
 <<<
 // Kap4 - Spesifikasjonsomfang
 // Uklar
-include::Produktspesifikasjon_Punktsky_10_Kap04.adoc[]
+
+include::Produktspesifikasjon_Punktsky_Kap04.adoc[]
 
 <<<
 // Kap5 - Innhold og struktur
 // Bestillingskategorier
-include::Produktspesifikasjon_Punktsky_10_Kap05.adoc[]
+
+include::Produktspesifikasjon_Punktsky_Kap05.adoc[]
 
 <<<
 // Kap6 - Referansesystem
 // OK
-include::Produktspesifikasjon_Punktsky_10_Kap06.adoc[]
+
+include::Produktspesifikasjon_Punktsky_Kap06.adoc[]
 
 <<<
 // Kap7 - Kvalitet
 // Bestillingskategorier
-include::Produktspesifikasjon_Punktsky_10_Kap07.adoc[]
+
+include::Produktspesifikasjon_Punktsky_Kap07.adoc[]
 
 <<<
 // Kap8 - Datafangst
 // Bestillingskategorier
-include::Produktspesifikasjon_Punktsky_10_Kap08.adoc[]
+
+include::Produktspesifikasjon_Punktsky_Kap08.adoc[]
 
 <<<
 // Kap9 - Datavedlikehold
 // 
-include::Produktspesifikasjon_Punktsky_10_Kap09.adoc[]
+
+include::Produktspesifikasjon_Punktsky_Kap09.adoc[]
 
 <<<
 // Kap10 - Presentasjon
 // 
-include::Produktspesifikasjon_Punktsky_10_Kap10.adoc[]
+include::Produktspesifikasjon_Punktsky_Kap10.adoc[]
 
 <<<
 // Kap11 - Leveranse
 // LAS 1.4
 // Metadata
 // Homogenitetsplott
-include::Produktspesifikasjon_Punktsky_10_Kap11.adoc[]
+
+include::Produktspesifikasjon_Punktsky_Kap11.adoc[]
 
 <<<
 // Kap12 - Tilleggsinformasjon
-include::Produktspesifikasjon_Punktsky_10_Kap12.adoc[]
+include::Produktspesifikasjon_Punktsky_Kap12.adoc[]
 
 <<<
 // Kap13 - Metadata
 // SOSI
-include::Produktspesifikasjon_Punktsky_10_Kap13.adoc[]
+include::Produktspesifikasjon_Punktsky_Kap13.adoc[]
 
 // Kap14 - Appendix
-include::Produktspesifikasjon_Punktsky_10_Kap14_App1.adoc[]
+include::Produktspesifikasjon_Punktsky_Kap14_App1.adoc[]
 
 <<<
 // Kap15 - Appendix
-include::Produktspesifikasjon_Punktsky_10_Kap15_App2.adoc[]
+include::Produktspesifikasjon_Punktsky_Kap15_App2.adoc[]
 
 // Kap16 - Appendix
 [discrete]
