@@ -49,7 +49,7 @@ Skrivefeil i klassekode for vannoverflate. Skal være 9 og ikke 41.
 
 | Svar på epost 25.03.2022 
 
-Rettet i 1.0.1
+Rettet i 1.0.2
 
 
 |===

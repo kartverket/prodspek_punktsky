@@ -1,9 +1,9 @@
 :datasett: Punktsky
-:versjon: 1.0.1
-:publisert: 2022-03-11
-:prodspek-forrige: Produktspesifikasjon_Punktsky_1.0.pdf
+:versjon: 1.0.2
+:publisert: 2022-03-31
+:prodspek-forrige: Produktspesifikasjon_Punktsky_1.0.1.pdf
 :metadata-url: 
-:versjon-forrige: Punktsky v1.0 2022-01-01
+:versjon-forrige: Punktsky v1.0.1 2022-03-11
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
 //include::../../felles/adoc_parametere.adoc[]
 //Punktsky avviker noe og adoc_parametere er kopiert inn i fil: 
@@ -104,6 +104,9 @@ Rammeverket i Produktspesifikasjon Punktsky 1.0 tar utgangspunkt i og bygger vid
 ==== Innhold i endringsloggen
 
 Punktsky 1.0 erstatter produktspesifikasjonen FKB-Laser 3.0. For terrestrisk LiDAR videreføres i stor grad det eksisterende rammeverket. Nye kartleggingsmetoder introduseres og standarden innbefatter også en ny hovedkategori "Egendefinert" til hjelp i forvaltningen av punktskyer med ukjent nøyaktighet og opphav. Det vil ikke være tilstrekkelig å lese endringsloggen for å få et helhetlig bilde av Punktsky 1.0 og for å få et komplett bilde av produktspesifikasjonen må man lese dokumentasjonen som en helhet.
+
+==== Endringer siden Punktsky 1.0.1 - 2022-03-11:
+* Rettet feil i klassekode for vannflate
 
 ==== Endringer siden Punktsky 1.0 - 2022-01-01:
 * Presisering fotavtrykk for Luftbåren Topografisk LiDAR
