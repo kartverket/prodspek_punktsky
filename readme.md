@@ -7,5 +7,5 @@ Alle figurer og tekstdokumenter er lagt til repositoriet, men i tillegg er det e
 * Produktspesifikasjon_Punktsky_Figurer.xlsx
 * Produktspesifikasjon_LAS_Klasser.xlsx
 
-Disse ligger i Teams under "Geovekst Arbeidsgruppe Høyde | 10.PRoduktspesifikasjon_Punktsky"
+Disse ligger i Teams under "Geovekst Arbeidsgruppe Høyde | 10.Produktspesifikasjon_Punktsky"
 
