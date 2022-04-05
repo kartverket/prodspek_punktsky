@@ -1,0 +1,33 @@
+////
+START Lisensvilkår 
+////
+
+[discrete]
+=== Lisens
+
+Denne standarden er gitt ut under 
+https://data.norge.no/nlod/no/[norsk lisens for offentlige data (NLOD)].
+
+Du har lov til:
+
+* å kopiere og tilgjengeliggjøre
+* å endre og/eller sette sammen med andre datasett
+* å kopiere og tilgjengeliggjøre en endret eller sammensatt versjon
+* å benytte datasettet kommersielt
+
+På følgende vilkår:
+
+* at du navngir lisensgiver slik lisensgiver ber om, men ikke på en måte som
+indikerer at disse har godkjent eller anbefaler deg eller din bruk av datasettet
+* at du ikke bruker dataene på en måte som fremstår som villedende, og heller ikke
+fordreier eller uriktig fremstiller dataene
+
+Med den forståelse:
+
+* at data som inneholder personopplysninger og er taushetsbelagt ikke er omfattet
+av denne lisensen og ikke kan viderebrukes
+* at lisensgiver fraskriver seg ethvert ansvar for informasjonens kvalitet og hva informasjonen brukes til
+
+////
+SLUTT Lisensvilkår 
+////
