@@ -51,5 +51,13 @@ Skrivefeil i klassekode for vannoverflate. Skal være 9 og ikke 41.
 
 Rettet i 1.0.2
 
+| 25.05.2022
+| Christian.Malmquist@kartverket.no
+| Kap11.1 Leveranse Punktsky
+
+Inkludere referanse til https://www.asprs.org/wp-content/uploads/2010/12/LAS_Domain_Profile_Description_Topo-Bathy_Lidar.pdf for Bathymetric LiDAR
+| --
+
+--
 
 |===
