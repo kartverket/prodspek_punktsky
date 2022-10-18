@@ -63,4 +63,23 @@ Forklare bit encoding 17
 
 --
 
+ 17.10.2022
+| Christian.Malmquist@kartverket.no
+| 13. Metadata
+
+Inkludere krav til ..TRANSPAR i .HODE
+| --
+
+--
+
+--
+
+ 18.10.2022
+| Christian.Malmquist@kartverket.no / ivar.oveland@kartverket.no
+| )3æ8 Fotavtrykk
+
+Krav til fotavtrykk for kategori C / NDH endres fra 2.00 m til 0.75
+| --
+
+
 |===
