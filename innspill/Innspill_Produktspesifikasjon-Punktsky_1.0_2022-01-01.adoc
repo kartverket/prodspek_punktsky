@@ -63,6 +63,8 @@ Presisere sensortagging i header ved miks av sensorer
 Eksempel på beregning av tid
 
 Forklare bit encoding 17
+
+Kapittelmerking Lisenskapittel
 |--
 
 
