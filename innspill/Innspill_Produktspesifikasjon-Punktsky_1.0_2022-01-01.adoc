@@ -86,15 +86,23 @@ Krav til fotavtrykk for kategori A / Detaljkartlegging endres fra 0.20 til 0.25
 | --
 |--
 
-| 18.10.2022
+| 03.01.2023
 | Christian.Malmquist@kartverket.no 
-| Justering skranker Psky_1_MBES
+| Justering post ALB Elv Innsjøprosjekt
 
-Bytte kategori fra B til A
-
+MBES: 
+Justering skrankeverdier MBES nøyakgithet: 
 Justering krav til vertikal nøyaktighet: 
 Absolutt    0.12m + 0.002*dybde
 Presisjon   0.08m + 0.002*dybde
+
+ALB
+Tetthet: Vurdere å flytte fra Psky_1_ALB_B til Psky_1_ALB_C for å bedre gjengi tetthetsforventning
+Krav til tetthet omskrives fra: 
+Krav til Tetthet gjelder for 2m under vannstand ved måletidspunkt og faktisk tetthet vil reduseres ved økene måledyp. Et systems evne til å levere på gitt tetthet forutsetter gitte turbiditetsverdier og bunnrefleksjon.
+Til: 
+Krav til tetthet gjelder for 2m under vannstand ved måletidspunkt og skal gjelde for hele sensorens operasjonsområde (depth range). Et systems evne til å levere bunnreturer innenfor operasjonsområde forutsetter gode turbiditetsverdier og bunnrefleksjon.
+
 
 | --
 
