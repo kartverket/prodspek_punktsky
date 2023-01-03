@@ -84,6 +84,16 @@ Krav til fotavtrykk for kategori C / NDH endres fra 2.00 m til 0.75
 Krav til fotavtrykk for kategori A / Detaljkartlegging endres fra 0.20 til 0.25
 
 | --
+|--
 
+| 18.10.2022
+| Christian.Malmquist@kartverket.no 
+| Justering skranker Psky_1_MBES_B
+
+Justering krav til vertikal nøyaktighet: 
+Absolutt    0.12m + 0.002*dybde
+Presisjon   0.08m + 0.002*dybde
+
+| --
 
 |===
