@@ -88,7 +88,9 @@ Krav til fotavtrykk for kategori A / Detaljkartlegging endres fra 0.20 til 0.25
 
 | 18.10.2022
 | Christian.Malmquist@kartverket.no 
-| Justering skranker Psky_1_MBES_B
+| Justering skranker Psky_1_MBES
+
+Bytte kategori fra B til A
 
 Justering krav til vertikal nøyaktighet: 
 Absolutt    0.12m + 0.002*dybde
