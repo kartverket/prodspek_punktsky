@@ -11,6 +11,11 @@ SOSI-fil som definerer prosjektområde. Skal ha følgende innhold:
 | ..SOSI-VERSJON 4.5|
 | ..SOSI-NIVÅ 4|
 | ..OBJEKTKATALOG Punktsky 1.0|
+|..TRANSPAR|
+|...ENHET| 0.01
+|...VERT-DATUM| NN2000
+|...KOORDSYS |Gjeldende UTM sone
+|...ORIGO-NØ |Lokalt origo skal ikke benyttes
 | .KURVE 1:|
 | ..OBJTYPE LaserDekningsområdeAvgrensning|
 | ..DEKNINGSNUMMER "08777"|Prosjektnummer
@@ -38,6 +43,11 @@ VQ-1560i - L735"
 | ..SOSI-VERSJON 4.5|
 | ..SOSI-NIVÅ 2|
 | ..OBJEKTKATALOG Punktsky 1.0|
+|..TRANSPAR|
+|...ENHET| 0.01
+|...VERT-DATUM| NN2000
+|...KOORDSYS |Gjeldende UTM sone
+|...ORIGO-NØ |Lokalt origo skal ikke benyttes
 | .KURVE 1:|
 | ..OBJTYPE LaserFlystripe|
 | ..FLYDATO 20150502				|Dato på ISO format: YYYYMMDD

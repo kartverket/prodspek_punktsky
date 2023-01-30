@@ -75,7 +75,7 @@ Krav til datafangst, prosessering og leveranse er utfyllende beskrevet i PaBG.
 |Horisontal Nøyaktighet|Standardavvik (1 sigma)|0,05|0,10|0,20|Egendefinert
 |Horisontal Nøyaktighet|Systematisk|0,15|0,30|0,30|Egendefinert
 |Maksimum Punktavstand| |0,32|0,45|0,70|Egendefinert
-|Maksimum Fotavtrykk|(1/e2)|0,20|0,50|2,00|Egendefinert
+|Maksimum Fotavtrykk|(1/e2)|0,25|0,5|0,75|Egendefinert
 |Maksimum Skannevinkel|pluss / minus|20|20|20|Egendefinert
 |Obligatoriske Klasser||1+2+7+17+21|1+2+7+17+21|1+2+7+17+21|1+7
 |NHM Oppdateres||Ja|Ja|Ja|Nei
@@ -131,7 +131,7 @@ Krav til *Skannevinkel* er veiledende og vil ikke gjelde for alle type ALB senso
 
 For kombinert batymetrisk og topografisk datafangst må de *Obligatoriske klassene* utvides til å inneholde klassene detaljert for topografisk LiDAR. Merk at for Luftbåren Batymetrisk LiDAR skal vannflate [underline]#alltid# klassifiseres til klasse 42.
 
-Krav til *Tetthet* gjelder for 2m under vannstand ved måletidspunkt og faktisk tetthet vil reduseres ved økene måledyp. Et systems evne til å levere på gitt tetthet forutsetter gitte turbiditetsverdier og bunnrefleksjon. 
+Krav til *Tetthet* gjelder for 2m under vannstand ved måletidspunkt og skal gjelde for hele sensorens operasjonsområde (depth range). Et systems evne til å levere bunnreturer innenfor operasjonsområde forutsetter gode turbiditetsverdier og bunnrefleksjon. 
 
 ****
 
@@ -171,8 +171,8 @@ For krav til datafangst benyttes  https://www.kartverket.no/globalassets/til-sjo
 |====================
 |Kategorier ||Høy|Middels|Minimum|Egendefinert
 |Kategori ID||Psky_1_MBES_A|Psky_1_MBES_B|Psky_1_MBES_C|Psky_1_MBES_E
-|Vertikal Nøyaktighet (Presisjon)|Standardavvik (1 sigma)|x|0.05 + 0.001*dybde|x|Egendefinert
-|Vertikal Nøyaktighet (Absolutt)|Systematisk|x|0.10 + 0.002*dybde|x|Egendefinert
+|Vertikal Nøyaktighet (Presisjon)|Standardavvik (1 sigma)|x|0.08 + 0.002*dybde|x|Egendefinert
+|Vertikal Nøyaktighet (Absolutt)|Systematisk|x|0.12 + 0.002*dybde|x|Egendefinert
 |Horisontal Nøyaktighet|Standardavvik (1 sigma)|x|-|x|Egendefinert
 |Horisontal Nøyaktighet|Systematisk|x|0.20 + 0.016*dybde|x|Egendefinert
 |Obligatoriske Klasser||x|40|x|40

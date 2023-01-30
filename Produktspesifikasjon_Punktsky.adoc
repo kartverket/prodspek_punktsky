@@ -1,7 +1,7 @@
 :datasett: Punktsky
-:versjon: 1.0.2
-:versjon-forrige: 1.0.1
-:publisert: 2022-03-31
+:versjon: 1.0.3
+:versjon-forrige: 1.0.2
+:publisert: 2023-02-01
 :prodspek-forrige: Produktspesifikasjon_Punktsky_{versjon-forrige}.pdf
 // All informasjon i hode over denne linja må fylles ut for hvert datasett. Øvrige parametere settes i adoc_parametere.adoc
 //include::../../felles/adoc_parametere.adoc[]
@@ -96,7 +96,10 @@ Primært skal spesifikasjonen gi et rammeverk for bestilling av punktskydatasett
 
 Rammeverket i Produktspesifikasjon Punktsky 1.0 tar utgangspunkt i og bygger videre på Produktspesifikasjon https://register.geonorge.no/register/versjoner/produktspesifikasjoner/kartverket/fkb-laser[FKB-Laser v3.0 2021-01-01].
 
-* Punktsky 1.0 - 2022-01-01
+* Punktsky 1.0.0 - 2022-01-01
+* Punktsky 1.0.1 - 2022-03-11
+* Punktsky 1.0.2 - 2022-03-31
+* Punktsky 1.0.3 - 2023-02-01
 
 === Endringslogg
 
@@ -104,12 +107,13 @@ Rammeverket i Produktspesifikasjon Punktsky 1.0 tar utgangspunkt i og bygger vid
 
 Punktsky 1.0 erstatter produktspesifikasjonen FKB-Laser 3.0. For terrestrisk LiDAR videreføres i stor grad det eksisterende rammeverket. Nye kartleggingsmetoder introduseres og standarden innbefatter også en ny hovedkategori "Egendefinert" til hjelp i forvaltningen av punktskyer med ukjent nøyaktighet og opphav. Det vil ikke være tilstrekkelig å lese endringsloggen for å få et helhetlig bilde av Punktsky 1.0 og for å få et komplett bilde av produktspesifikasjonen må man lese dokumentasjonen som en helhet.
 
-==== Endringer siden Punktsky 1.0.1:
-* Rettet feil i klassekode for vannflate
 
-==== Endringer fra Punktsky 1.0 - Punktsky 1.0.1:
-* Presisering fotavtrykk for Luftbåren Topografisk LiDAR
-* Rettet feil krav til grunnrissnøyaktighet i bildematching for kategori Psky_1_DIM_C. 
+==== Endringer etter Punktsky 1.0:
+* (1.0.3) Presiseringer Kap 11
+* (1.0.3) Justering krav til fotavtrykk ALS, krav til vertikal nøyaktighet MBES og krav til tetthet ALB. 
+* (1.0.2) Rettet feil i klassekode for vannflate
+* (1.0.1) Presisering fotavtrykk for Luftbåren Topografisk LiDAR
+* (1.0.1) Rettet feil krav til grunnrissnøyaktighet i bildematching for kategori Psky_1_DIM_C.
 
 ==== Endringer siden FKB-Laser 3.0 til Punktsky 1.0:
 

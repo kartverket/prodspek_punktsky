@@ -1,7 +1,7 @@
 == Leveranse
 === Leveranse Punktsky
 
-Punktskyen skal leveres på LAS format som detaljert i  http://www.asprs.org/wp-content/uploads/2019/07/LAS_1_4_r15.pdf[LAS Specification 1.4 - R15]. Filene skal komprimeres til https://laszip.org/[LAZ].
+Punktskyen skal leveres på LAS format som detaljert i  http://www.asprs.org/wp-content/uploads/2019/07/LAS_1_4_r15.pdf[LAS Specification 1.4 - R15]. Filene skal komprimeres til https://laszip.org/[LAZ]. Klassene relatert til batymetri tar utgangspunkt i inndeling presentert i https://www.asprs.org/wp-content/uploads/2010/12/LAS_Domain_Profile_Description_Topo-Bathy_Lidar.pdf[ASPRS Specification Topo-Bathy Lidar]
 
 I henhold til LAS formatet skal standard GPS Time brukes istedenfor GPS Week Time. Tidspunktet er for utsendt puls og korrekt 'encoding tag' for GPS Time type må settes i 'LAS Header'.
 
