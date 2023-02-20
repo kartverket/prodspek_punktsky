@@ -27,7 +27,7 @@ ifdef::backend-pdf[:toc: macro]
 :umlbase-url: https://sosi.geonorge.no/uml-modeller/sosi-del-3-produktspesifikasjoner/
 :reginstrbase-url: https://sosi.geonorge.no/registreringsinstrukser/
 :fkbGenerellDel-url: https://sosi.geonorge.no/Standarder/FKB_generell_del/5.0
-:title-page-background-image: image:../felles/forsidebilde_kartverketstandarder.jpg[]
+:title-page-background-image: image:felles/forsidebilde_kartverketstandarder.jpg[]
 :fkbdatasett: {datasett} {versjon}
 :skjema-url: {skjemabase-url}{datasett}/{versjon}
 :prodspek-url: {prodspekbase-url}{datasett}
@@ -224,4 +224,4 @@ include::Produktspesifikasjon_Punktsky_Kap15_App2.adoc[]
 // Kap16 - Appendix
 [discrete]
 == Lisensvilkår
-include::../felles/lisensvilkaar.adoc[]
+include::felles/lisensvilkaar.adoc[]
