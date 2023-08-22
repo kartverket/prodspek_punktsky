@@ -93,4 +93,16 @@ _Krav til tetthet gjelder for 2m under vannstand ved måletidspunkt og skal gjel
 
 | Rettet i 1.0.3
 
+| 22.08.2023
+| Christian.Malmquist@kartverket.no
+| 11.2.3. Homogenitetsplott:  
+
+Presisere at homogenitetsplott skal genereres med høyde i meter. 
+
+| Skrivefeil 
+
+Endre Produktspesifikasjon Punktsky _og_ Produksjon av Basis Geodata
+
+Ikke rettet
+
 |===
