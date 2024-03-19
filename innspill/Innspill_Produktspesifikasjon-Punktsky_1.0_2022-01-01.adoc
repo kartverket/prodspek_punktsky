@@ -105,4 +105,16 @@ Endre Produktspesifikasjon Punktsky _og_ Produksjon av Basis Geodata
 
 Ikke rettet
 
+| 19.03.2024
+| Christian.Malmquist@kartverket.no
+| Diverse
+
+Fange endringer i bathyklasser: https://github.com/ASPRSorg/LAS/issues/117
+Vurdere endring ordlyd Klasse 10 (fra jernbanespor til jernbaneskinne)
+Vurdere alternativ inndeling for leveranser med høy tetthet
+Vurdere 3D nøyaktighet for terrestrisk/mobil LiDAR (BaneNor)
+Vurdere 10m validitetsavstand for terrestrisk/mobil LiDAR (BaneNor)
+
+|Ikke rettet
+
 |===
