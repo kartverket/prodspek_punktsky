@@ -117,4 +117,14 @@ Vurdere 10m validitetsavstand for terrestrisk/mobil LiDAR (BaneNor)
 
 |Ikke rettet
 
+| 30.05.2024
+| Kjell Ola Olafsen <Kjell.Ola.Olafsen@kartverket.no>
+| Leveranse LAZ
+
+Presisering:
+Leveranser leveres i cm (Hele leveransen i samme enhet)
+Leveranser leveres med offset 0 0 0  (Hele leveransen i med samme offset)
+
+|Ikke rettet
+
 |===
