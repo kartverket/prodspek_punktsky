@@ -127,4 +127,13 @@ Leveranser leveres med offset 0 0 0  (Hele leveransen i med samme offset)
 
 |Ikke rettet
 
+| 04.04.2025
+| Christian.Malmquist@kartverket.no
+| Tetthet ALB
+
+Presisering:
+Presisere dybdeintervall som ligger til grunn for beregning av tetthet. (-1.5 -> -2.5)
+
+|Ikke rettet
+
 |===
